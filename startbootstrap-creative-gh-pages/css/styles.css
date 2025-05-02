@@ -11459,9 +11459,10 @@ header.masthead h1, header.masthead .h1 {
 .skills {
   width: 80%;
   max-width: 960px;
-  height: 720px;
+  height: 0px;
   margin: auto;
   position: relative;
+  padding: 22rem 0;
 }
 
 
@@ -11542,56 +11543,78 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 text-align: left;
 }
 
-.bar.adv[data-skill="35"]::before{
-  width: 35%;
-}
-
-
-
-.chart__bar[data-skill="35"] {
-  width: 35%;
-}
-.chart__bar[data-skill="40"] {
+.bar.adv[data-skill="40"]::before{
   width: 40%;
 }
-.chart__bar[data-skill="45"] {
-  width: 45%;
-}
-.chart__bar[data-skill="50"] {
-  width: 50%;
-}
-.chart__bar[data-skill="55"] {
-  width: 55%;
-}
-.chart__bar[data-skill="60"] {
+.bar.adv[data-skill="60"]::before{
   width: 60%;
 }
-.chart__bar[data-skill="65"] {
+.bar.adv[data-skill="65"]::before{
   width: 65%;
 }
-.chart__bar[data-skill="70"] {
+.bar.adv[data-skill="70"]::before{
   width: 70%;
 }
-.chart__bar[data-skill="75"] {
+.bar.adv[data-skill="75"]::before{
   width: 75%;
 }
-.chart__bar[data-skill="80"] {
+.bar.adv[data-skill="80"]::before{
   width: 80%;
 }
-.chart__bar[data-skill="85"] {
-  width: 85%;
-}
-.chart__bar[data-skill="90"] {
-  width: 90%;
-}
-.chart__bar[data-skill="95"] {
+.bar.adv[data-skill="95"]::before{
   width: 95%;
 }
-
-
 
 .chart__label {
   padding-left: 10px;
   line-height: 30px;
   color: white;
+}
+
+.transparent-title {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 10px;
+  font-size: 1.25rem; /* Adjust size */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to make text stand out */
+  border-radius: 5px;
+}
+
+.portfolio-box-horizontal {
+  background-color: #212529;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-box-horizontal:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-thumbnail {
+  width: 300px;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.portfolio-box-text {
+  color: white;
+}
+
+.portfolio-box-text .project-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.orange-underline {
+  text-decoration: underline;
+  text-decoration-color: #f4623a; /* orange */
+}
+
+
+.light-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--bs-light);
 }

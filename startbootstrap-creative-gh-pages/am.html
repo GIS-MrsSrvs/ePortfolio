@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>e-Portfolio | Marius Servais</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-servais.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <!-- ANURATI - FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet">
+    <!-- ELIANTO -  FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+    <!-- Centauri - FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="font-family: 'alphacentauri', sans-serif;" href="#page-top">Marius Servais</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Project -->
+  
+
+
+    <div class="page-section bg-secondary">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Analysis and Modeling:</h2>
+                    <h2 class="text-white mt-0">Heat Energy Consumption (Net Energy) of Residential Buildings based on the
+                        ‘Procedural Building Modeling’ Approach</h2>
+                        <hr class="divider divider-light" />                   
+                            <div class="text-white-75 mb-4 text-block">
+                                <h3 class="text-center">Summary</h3>   
+                                <p>
+                                    This project explored the methodological feasibility of estimating net heat energy consumption for residential buildings using a procedurally generated 3D semantic building model. Using the Weststadt district of Bonn as a case study, the aim was not to create a perfect replica of the built environment, but to develop a rule-based approximation that closely reflects the real-world urban fabric and serves as a foundation for energy analysis.
+                                  </p>
+
+                                  <p>
+                                    Using ESRI CityEngine, procedural rules (CGA) were developed to simulate building typologies by integrating attributes such as footprint, height, roof form, number of floors, and functional classification (e.g., single- vs. multi-family housing). The modeling relied on ALKIS cadastral data, land use plans, and zoning regulations, processed and harmonized in QGIS and ArcGIS Pro.
+                                  </p>
+                                  <div class="text-center">
+                                    <figure>
+                                      <img src="assets/img/portfolio/thumbnails/FlowchartDiagram_procedural_modeling.png" width="100%" alt="Flowchart diagram of applied CGA rules for creating a 3D semantic procedural building model">
+                                      <figcaption>Figure 1: Flowchart Diagram of Applied CGA Rules for Creating a 3D Semantic Procedural Building Model.</figcaption>
+                                    </figure>
+                                  </div>
+                                  <p>
+                                    A key component of the project was the calculation of each building’s <strong>net heat energy demand</strong>, based on its geometry and semantic attributes. The estimation methodology followed the established standards <strong>EN ISO 13790</strong> and <strong>EN 15316</strong>, which provide a framework for space heating energy calculation under steady-state conditions. Parameters such as building volume, external envelope area, usage type, and construction year were used to derive heat demand values, supported by standardized U-values and building archetype assumptions linked to thermal regulations over time.
+                                  </p>
+                                
+                                  <p>
+                                    Although certain data gaps (e.g., exact construction materials) necessitated generalizations, the approach demonstrated that even with approximate 3D models, meaningful spatial energy assessments can be carried out. The final results were visualized in an interactive 3D WebScene, showcasing both the procedural building structures and their respective energy demand values.
+                                  </p>
+                                
+                                  <p>
+                                    Overall, this project illustrated how procedural modeling can serve not only for urban visualization but also for spatially explicit energy demand simulations, providing urban planners and sustainability analysts with a scalable, reproducible method for early-stage assessments—even in data-constrained environments.
+                                  </p>
+                                  <div class="text-center">
+                                    <figure>
+                                      <img src="assets/img/portfolio/thumbnails/Energy_modelling.PNG" width="100%" alt="Result: Heat Energy (net) per area in Weststadt">
+                                      <figcaption>Figure 2: Output of Heat Energy (net) per Area in the district of Weststadt, Bonn.</figcaption>
+                                    </figure>
+                                  </div>
+                            </div>
+                            <div>
+                                <a href="https://storymaps.arcgis.com/stories/bffdf5719b674fe0a45e5a34a19d4cf1" target="_blank">See full Storymap (ArcGIS)</a>
+                            </div>
+                            
+                            <div>
+                                <a href="assets/ProceduralModelingWeststadt.pdf" target="_blank">Access to full paper</a> 
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2025 - Marius Servais</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

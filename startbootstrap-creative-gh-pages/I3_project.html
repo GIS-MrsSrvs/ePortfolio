@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>e-Portfolio | Marius Servais</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-servais.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <!-- ANURATI - FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet">
+    <!-- ELIANTO -  FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+    <!-- Centauri - FUTURISTIC FONT -->
+    <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="font-family: 'alphacentauri', sans-serif;" href="#page-top">Marius Servais</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Project -->
+  
+
+
+    <div class="page-section bg-secondary">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Integrated Project:</h2>
+                    <h2 class="text-white mt-0">Citizen-Oriented E-Complaint Service</h2>
+                    <hr class="divider divider-light" />
+                    <div class="text-white-75 mb-4 text-block">
+                        <h3 class="text-center">Summary</h3>   
+                        <p>
+                            This project presents a lightweight, mobile-friendly web application that enables citizens to report spatial nuisances—such as illegal dumping, broken streetlights, or potholes—directly to their local municipality. The service is designed in line with contemporary e-Governance principles, emphasizing transparency, ease of use, and minimal personal data dependency. It facilitates two-way communication between citizens and public authorities, allowing users to track the status of their submitted complaints in real time.
+                          </p>
+                          <p>
+                            The technical implementation is entirely based on open-source components and adheres to OGC standards for spatial data handling. The application uses <strong>Node.js</strong> on the backend, providing a lightweight and asynchronous server environment. Spatial functionalities are integrated via a <strong>GeoServer</strong> instance, which serves as the OGC-compliant Web Map Service (WMS) and Web Feature Service (WFS) provider. Geospatial data is stored and managed using <strong>PostgreSQL with the PostGIS extension</strong>, ensuring reliable and efficient spatial querying.
+                          </p>
+                          <p>
+                            The front end of the application is implemented using standard web technologies—HTML5, CSS3, and JavaScript—alongside the <strong>OpenLayers</strong> library for map rendering and user interaction. Users can place a marker on the map, provide descriptive information about the issue, and optionally upload a photo. The application does not require user registration, promoting privacy and accessibility, while still enabling the municipality to provide updates linked to the reported location.
+                          </p>
+                          <div class="text-center">
+                            <figure>
+                              <img src="assets/img/portfolio/thumbnails/e-complaint_archi.png" width="100%" alt="Software Architecture of E-Complaint Service">
+                              <figcaption>Figure 1: Software Architecture of E-Complaint Service</figcaption>
+                            </figure>
+                        </div>
+                          <p>
+                            This project showcases a privacy-respecting, standards-based approach to participatory urban governance. By combining widely adopted geospatial technologies with a lightweight, service-oriented architecture, it delivers a scalable and replicable solution for municipalities aiming to increase citizen engagement and improve spatial issue reporting workflows.
+                          </p>   
+                          <!-- Video integration -->
+                            <video width="720" height="480" controls autoplay loop>
+                                <source src="assets/showcase_service_ecomplaint_1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <!-- Video integration -->
+                            <video width="720" height="480" controls autoplay loop>
+                                <source src="assets/showcase_service_ecomplaint_2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                </div>
+         
+                    <div>
+                        <a href="assets/Servais_FinalManuscript.pdf" target="_blank">Access to full paper</a> 
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2025 - Marius Servais</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

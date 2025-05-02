@@ -3,14 +3,14 @@ const data = {
     labels: [
       'Data Aquisition',
       'Data Engineering',
-      'Data Analysis',
       'Data Science',
-      'Software Development'
+      'Software Development',
+      'Product Development'
     ],
     
     datasets: [{
       label: 'Profile',
-      data: [65, 80, 85, 85, 65],
+      data: [60, 80, 85, 65, 85],
       fill: true,
       backgroundColor: 'rgba(255, 99, 132, 0.2)',
       borderColor: 'rgb(255, 99, 132)',
